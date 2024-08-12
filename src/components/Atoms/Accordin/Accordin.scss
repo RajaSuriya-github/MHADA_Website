@@ -1,0 +1,21 @@
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    color:#000;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item{
+    font-family: Open Sans,sans-serif;
+    border-bottom: 1px solid #747272;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+@media screen and (max-width: 430px) {
+    .mobile-view{
+        display: flex;
+        justify-content: center;
+    }
+}

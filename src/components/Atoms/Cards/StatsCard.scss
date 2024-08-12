@@ -1,0 +1,38 @@
+.stats-card {
+    background-color: #f9f8f2;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: max-content;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+    .stat-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      .stat-value {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+  
+        .stat-plus {
+          color: #f26d21;
+          font-size: 1.5rem;
+          vertical-align: top;
+        }
+      }
+  
+      .stat-label {
+        font-size: 1rem;
+        color: #555;
+        margin-left: 1rem;
+        border-left: 1px solid #ddd;
+        padding-left: 1rem;
+      }
+    }
+  }
+  
