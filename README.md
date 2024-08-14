@@ -48,3 +48,10 @@ export default tseslint.config({
   },
 })
 ```
+mobile view
+
+![alt text](image.png)
+
+desktop view
+
+![alt text](image-1.png)

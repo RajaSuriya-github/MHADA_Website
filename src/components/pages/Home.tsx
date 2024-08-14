@@ -8,58 +8,53 @@ import GrpOfPhone from '../../assets/grpOfPhone.svg';
 import QualityAssurance from '../../assets/QualityAssurance.svg';
 import Transparency from '../../assets/Transparency.svg';
 import AccordinAlwaysOpen from "../Atoms/Accordin/Accordin";
-import Banner from "../Atoms/Banner/Banner";
 import ContentCard from "../Atoms/Cards/ContentCard";
-import DescriptionCard from "../Atoms/Cards/DescriptionCard";
 import LotteryContentCard from "../Atoms/Cards/LotteryContentCard";
-import StatCard from "../Atoms/Cards/StatCard";
-import StepCard from "../Atoms/Cards/StepCard";
-import withCardWrapper from "../HOC/withCardWrapper";
-import MhadaLogo from "../shared/MhadaLogo";
 import MhadaCard from "../Atoms/Cards/MhadaCard";
+import { StatsCard1, StatsCard2, StatsCard3 } from "../Atoms/Cards/StatCard";
+import StepCard from "../Atoms/Cards/StepCard";
+import VideoCard from "../Atoms/Cards/VideoCard";
+import { CarouselComp } from "../Atoms/Carousel/CarouselComp";
+import MhadaLogo from "../shared/MhadaLogo";
 import { accordinLists, cardDetails, contentArr, lotteryCardsData, realTimeList, stepList } from "../shared/sharedpageData";
-// import VideoCard from "../Atoms/Cards/VideoCard";
+
 
 const Home = () => {
-    const WrappedStatCard = withCardWrapper(StatCard, '#f5f5f5');
-    const WrappedDescriptionCard = withCardWrapper(DescriptionCard, '#fde5e0');
 
     const [selectedTab, setSelectedTab] = useState<string>("link-1");
     
     return (
-        <div className="px-5">
-            <div className="row">
-                <div className="col-md-6 col-lg-8 col-sm-4">
-                    <Banner/></div>
-                <div className="col-md-6 col-lg-4 col-sm-12">
-                    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <WrappedStatCard number="50" text="Completed Projects" />
-      <WrappedStatCard number="15,000" text="Homes Financed" />
-      {/* <WrappedDescriptionCard description="A Vision for Livable, Sustainable, and Affordable Living" satisfied="95% Satisfied Customers" /> */}
-    </div>
-                </div>
-            </div>
-            <Card style={{ borderColor: "#FFFFFF" }} className="cm-mt">
-                <h1 className="col-sm-3 col-md-4 col-lg-6">Building a better future with <MhadaLogo /></h1>
-                <p className="col-sm-4 col-md-8 col-lg-8">
+        <div className="px-4">
+        <div className="row">
+          <div className="col-lg-10 col-md-9 col-sm-12 mt-4">
+            <CarouselComp/>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-12 mt-4">
+          <StatsCard1/>
+          <StatsCard2/>
+          </div>
+          </div>
+            <Card style={{ borderColor: "#FFFFFF" }} className="cm-mt ">
+                <h1 className="col col-sm col-md-9 col-xl-5 col-xxl-8">Building a better future with <MhadaLogo /></h1>
+                <p className="col col-sm col-md-9 col-xl-5 col-xxl-8">
                     The <strong>Maharashtra Housing and Area Development Authority (MHADA)</strong> has been a cornerstone of affordable housing in Maharashtra since its inception in 1977. Dedicated to providing quality homes to middle and lower-income groups.
                 </p>
                 <div className="row content-card px-2  gap-4">
                     {contentArr.map(({ title, icon, content }: any) => (<ContentCard
                         title={title}
                         icon={icon}
-                        col={"col-sm-1 col-md-4 col-lg-4"}
+                        col={"col col-sm  col-md-4 col-lg col-xl-3 col-xxl-3"}    
                         content={content}
                     />))}
-                    <div className="col-4">
-                        {/* <VideoCard/> */}
-                    </div>
+                    {/* <div className="col-4"> */}
+                        <VideoCard/>
+                    {/* </div> */}
 
                 </div>
 
             </Card>
             <Card style={{ borderColor: "#FFFFFF" }} className="lottery-card cm-mt">
-                <div className="col-sm-4 col-md-8 col-lg-8 ">
+                <div className="col-sm col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                     <MhadaLogo /><span className="title-span">lottery board projects</span>
                 </div>
                 <div className="tab-outer mt-2">
@@ -103,6 +98,7 @@ const Home = () => {
                         The MHADA lottery aims to provide housing opportunities to middle and lower-income groups in Maharashtra. It allows individuals to apply for a chance to purchase or rent affordable homes developed by MHADA.
                     </p>
                 </div>
+                <div className="row">
                 <Card className="col-sm-1 col-md-9 col-lg-9">
                     <div className="cardDetails">
                         <div>
@@ -128,6 +124,10 @@ const Home = () => {
                         </div>
                     </div>
                 </Card>
+                <div className="col-3">
+                  <StatsCard3/>  
+                </div>
+                </div>
             </Card>
             <Card style={{ borderColor: "#FFFFFF", backgroundColor: "#f5f5f5", borderRadius: "10px", padding: "1.5rem" }} className="easy-card cm-mt">
                 <h3 className="col-md-3">
@@ -141,6 +141,7 @@ const Home = () => {
                         list={list}
                         image={image}
                         altName={altName}
+                        col={"col-sm-12 col-md-3 col-xl-3 col-xxl-3"}
                     />))}
                 </div>
             </Card>

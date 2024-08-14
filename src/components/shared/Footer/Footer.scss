@@ -15,7 +15,7 @@ $input-border-radius: 20px;
   font-family: $Open-Sans;
   padding: 40px 20px;
   border-radius: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   input[type='email'] {
     border-radius: 25px;
     background: transparent;
@@ -179,5 +179,22 @@ $input-border-radius: 20px;
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+.footer .subscribe-btn {
+  background-color: #FFFFFF;
+  color: #E77B2B;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #E77B2B;
+  border-radius: 25px;
+  /* width: 130px; */
+  line-height: 15px;
+  min-width: auto;
+  max-width: 126px;
 }
 }

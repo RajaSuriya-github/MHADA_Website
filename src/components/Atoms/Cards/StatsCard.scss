@@ -1,38 +1,109 @@
-.stats-card {
-    background-color: #f9f8f2;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: max-content;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+// .clip-div{
+//   clip-path: polygon(0 0, 0 102%, 253% 0);
+//     background-color: #f2f2e9;
+//     height: 200px;
+//     max-width: 458px;
+//     border-radius: 10px;
+//     min-width: 458px;
+// }
+// .clip-div2{
+//   clip-path: polygon(0 0, 0 102%, 253% 0);
+//     background-color: #f2f2e9;
+//     height: 200px;
+//     max-width: 458px;
+//     border-radius: 10px;
+//     min-width: 458px;
+// }
+
+
+// .stats-card {
+//     background-color: #f9f8f2;
+//     padding: 1.5rem;
+//     border-radius: 10px;
+//     width: max-content;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   
-    .stat-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
+//     .stat-item {
+//       display: flex;
+//       align-items: center;
+//       margin-bottom: 1.5rem;
   
-      &:last-child {
-        margin-bottom: 0;
-      }
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
   
-      .stat-value {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #000;
+//       .stat-value {
+//         font-size: 2rem;
+//         font-weight: bold;
+//         color: #000;
   
-        .stat-plus {
-          color: #f26d21;
-          font-size: 1.5rem;
-          vertical-align: top;
-        }
-      }
+//         .stat-plus {
+//           color: #f26d21;
+//           font-size: 1.5rem;
+//           vertical-align: top;
+//         }
+//       }
   
-      .stat-label {
-        font-size: 1rem;
-        color: #555;
-        margin-left: 1rem;
-        border-left: 1px solid #ddd;
-        padding-left: 1rem;
-      }
-    }
+//       .stat-label {
+//         font-size: 1rem;
+//         color: #555;
+//         margin-left: 1rem;
+//         border-left: 1px solid #ddd;
+//         padding-left: 1rem;
+//       }
+//     }
+//   }
+.diagonal-card3 {
+    padding: 20px;
+    background: #E77B2B;
+    clip-path: polygon(0% 0%, 100% 22%, 157% 98%, 0% 139%);
+    border-radius: 15px;
+    height: 200px;
+
+  // .title {
+  //   font-size: 20px;
+  //   font-weight: bold;
+  //   margin-top: 40px;
+  // }
+
+  // .subtitle {
+  //   font-size: smaller;
+  //   margin-top: 10px;
+  // }
+}
+.diagonal-card2 {
+  padding: 20px;
+  background: rgb(252, 236, 223);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  border-radius: 15px;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
   }
-  
+
+  .subtitle {
+    font-size: smaller;
+    margin-top: 10px;
+  }
+}
+.diagonal-card1 {
+  padding: 20px;
+  background: rgb(243, 243, 233);
+  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+  border-radius: 15px;
+
+  h1 {
+    margin: 0;
+  }
+
+  .highlight {
+    color: #e77b29;
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+  }
+}
